@@ -26,7 +26,7 @@ const Header = () => {
           <Link to="/">App</Link>
           <Link to="/">Help</Link>
           <Link to="/">
-            <img src="/assets/language.png" alt="" />
+            <img src="/assets/language.png" className="l_img" alt="" />
           </Link>
           <Link to="/">USD</Link>
           <Link to="/">Search Bookings</Link>
