@@ -94,6 +94,14 @@
   font-family: Arial, sans-serif;
 }
 
+.header .container .navbar_top a:hover {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #627ff5;
+  font-family: Arial, sans-serif;
+}
+
 .header .container .navbar_top .l_img {
   width: 20px;
   height: 20px;
