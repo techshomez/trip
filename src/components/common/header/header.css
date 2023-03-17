@@ -7,6 +7,8 @@
   background-size: cover;
 }
 
+/* Navbar top */
+
 .header .container {
   padding: 1rem 2.5%;
   display: flex;
@@ -98,7 +100,7 @@
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  background-color: #627ff5;
+  border-bottom: 2px solid #627ff5;
   font-family: Arial, sans-serif;
 }
 
@@ -145,4 +147,16 @@
   background-color: #fff;
   color: #627ff5;
   transition: all 1s;
+}
+
+/* Navbar Bottom */
+
+.header .nav_wrapper{
+    padding: 1rem 2.5%;
+}
+
+.header .nav_wrapper .navbar_bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

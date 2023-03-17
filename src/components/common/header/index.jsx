@@ -33,6 +33,19 @@ const Header = () => {
           <Link to="/">Sign in / Register</Link>
         </nav>
       </div>
+      <div className="nav_wrapper">
+        <nav className="navbar_bottom">
+          <Link to="/">Hotels</Link>
+          <Link to="/">Flights</Link>
+          <Link to="/">Trains</Link>
+          <Link to="/">Cars</Link>
+          <Link to="/">Attractions & Ticket</Link>
+          <Link to="/">Bundle & Save</Link>
+          <Link to="/">Attractions</Link>
+          <Link to="/">Trip.com Rewards</Link>
+          <Link to="/">Deals</Link>
+        </nav>
+      </div>
     </div>
   );
 };
