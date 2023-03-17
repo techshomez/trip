@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiSearch } from "react-icons/fi";
+import { FaSistrix } from "react-icons/fa";
 import "./header.css";
 import Banner from "../../home/banner";
 
@@ -18,7 +18,7 @@ const Header = () => {
             />
             <button>
               <i>
-                <FiSearch />
+                <FaSistrix />
               </i>
             </button>
           </div>
