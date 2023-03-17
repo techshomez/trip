@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 import "./header.css";
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
             />
             <button>
               <i>
-                <FaSearch />
+                <FiSearch />
               </i>
             </button>
           </div>
@@ -39,7 +39,7 @@ const Header = () => {
           <Link to="/">Flights</Link>
           <Link to="/">Trains</Link>
           <Link to="/">Cars</Link>
-          <Link to="/">Attractions & Ticket</Link>
+          <Link to="/">Attractions & Tickets</Link>
           <Link to="/">Bundle & Save</Link>
           <Link to="/">Attractions</Link>
           <Link to="/">Trip.com Rewards</Link>

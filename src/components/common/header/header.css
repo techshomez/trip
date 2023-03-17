@@ -65,7 +65,7 @@
   right: 0;
   z-index: 2;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   top: 2px;
   right: 2px;
   width: 30px;
@@ -76,7 +76,8 @@
 }
 
 .header .container .nav_top_left .nav_search button i {
-  margin-top: +0.15rem;
+  margin-top: +0.2rem;
+  font-size: 14.3px;
 }
 
 .header .container .navbar_top {
@@ -152,11 +153,30 @@
 /* Navbar Bottom */
 
 .header .nav_wrapper{
-    padding: 1rem 2.5%;
+    padding: 0rem 2.5%;
+    margin-top: -0.13rem;
 }
 
 .header .nav_wrapper .navbar_bottom{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 2rem;
+    flex: 2;
+}
+
+.header .nav_wrapper .navbar_bottom a{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 540;
+    color: #FFFFFFCC;
+    font-family: Arial, sans-serif;
+}
+
+.header .nav_wrapper .navbar_bottom a{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 540;
+    color: #FFFFFFCC;
+    font-family: Arial, sans-serif;
 }
