@@ -15,6 +15,12 @@ const Banner = () => {
           </span>
         </div>
       </div>
+      <div className="search_wrapper">
+        <div className="search_box"></div>
+        <div className="search_cat">
+            
+        </div>
+      </div>
     </div>
   );
 };
