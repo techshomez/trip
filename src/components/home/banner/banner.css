@@ -1,0 +1,56 @@
+.banner {
+  padding: 1rem 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .container {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner .container h2 {
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.banner .container .banner_desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 0.8rem;
+}
+
+.banner .container .banner_desc .divider {
+  height: 12px;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.banner .container .banner_desc span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 0.2rem;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.banner .container .banner_desc span img {
+  width: 16px;
+  height: 16px;
+}

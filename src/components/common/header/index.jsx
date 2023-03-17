@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import "./header.css";
+import Banner from "../../home/banner";
 
 const Header = () => {
   return (
@@ -46,6 +47,7 @@ const Header = () => {
           <Link to="/">Deals</Link>
         </nav>
       </div>
+      <Banner />
     </div>
   );
 };
