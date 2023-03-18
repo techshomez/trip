@@ -6,10 +6,12 @@ import { format } from "date-fns";
 import { BsDoorOpenFill } from "react-icons/bs";
 import {
   FaCarAlt,
+  FaExclamationCircle,
   FaLaptopHouse,
   FaMinus,
   FaPlane,
   FaPlus,
+  FaRegStar,
   FaRegSun,
   FaSearch,
   FaSubway,
@@ -301,7 +303,36 @@ const Banner = () => {
           <div className="form_group">
             <input type="checkbox" name="" id="" />
             <span>I'm traveling for work</span>
-            <i></i>
+            <i>
+              <FaExclamationCircle />
+            </i>
+          </div>
+          <div className="rating_list">
+            <span>Star Rating</span>
+            <div className="r_list">
+              <h4>2</h4>
+              <i>
+                <FaRegStar />
+              </i>
+            </div>
+            <div className="r_list">
+            <h4>3</h4>
+              <i>
+                <FaRegStar />
+              </i>
+            </div>
+            <div className="r_list">
+            <h4>4</h4>
+              <i>
+                <FaRegStar />
+              </i>
+            </div>
+            <div className="r_list">
+            <h4>5</h4>
+              <i>
+                <FaRegStar />
+              </i>
+            </div>
           </div>
         </div>
       </div>

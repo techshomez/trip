@@ -130,7 +130,8 @@
   color: #8592a6;
 }
 
-.banner .search_wrapper .search_box .form_holder .form_items .d_text, .headerSearchText {
+.banner .search_wrapper .search_box .form_holder .form_items .d_text,
+.headerSearchText {
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
@@ -385,4 +386,96 @@
   color: #fff;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;
+}
+
+/* Rating Section */
+
+.banner .rating_wrapper {
+  width: 86.5%;
+  height: 40px;
+  position: absolute;
+  top: 25rem;
+  left: 85px;
+  background-color: #fff;
+}
+
+.banner .rating_wrapper .rating_items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner .rating_wrapper .rating_items .form_group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner .rating_wrapper .rating_items .form_group input {
+  margin-top: -0.1rem;
+}
+
+.banner .rating_wrapper .rating_items .form_group i {
+  margin-top: +0.1rem;
+  color: #0f294d;
+}
+
+.banner .rating_wrapper .rating_items .form_group span {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #3264ff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner .rating_wrapper .rating_items .rating_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner .rating_wrapper .rating_items .rating_list span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #333333;
+  padding-bottom: 2px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner .rating_wrapper .rating_items .rating_list .r_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  gap: 5px;
+  cursor: pointer;
+  color: #0F294D;
+  background-color: #f0f2f5;
+}
+
+.banner .rating_wrapper .rating_items .rating_list .r_list h4 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-top: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner .rating_wrapper .rating_items .rating_list .r_list i {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-top: 0.1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner .rating_wrapper .rating_items .rating_list .r_list:hover {
+  color: #3264ff;
 }
