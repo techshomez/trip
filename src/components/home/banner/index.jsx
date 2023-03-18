@@ -47,6 +47,34 @@ const Banner = () => {
       id: 2,
       name: "Las Vegas",
     },
+    {
+      id: 3,
+      name: "New York",
+    },
+    {
+      id: 4,
+      name: "Hong Kong",
+    },
+    {
+      id: 5,
+      name: "San Diego",
+    },
+    {
+      id: 6,
+      name: "Bangkok",
+    },
+    {
+      id: 7,
+      name: "Tokyo",
+    },
+    {
+      id: 8,
+      name: "Singapore",
+    },
+    {
+      id: 9,
+      name: "Cancun",
+    },
   ];
 
   const [openOptions, setOpenOptions] = useState(false);
@@ -316,19 +344,19 @@ const Banner = () => {
               </i>
             </div>
             <div className="r_list">
-            <h4>3</h4>
+              <h4>3</h4>
               <i>
                 <FaRegStar />
               </i>
             </div>
             <div className="r_list">
-            <h4>4</h4>
+              <h4>4</h4>
               <i>
                 <FaRegStar />
               </i>
             </div>
             <div className="r_list">
-            <h4>5</h4>
+              <h4>5</h4>
               <i>
                 <FaRegStar />
               </i>
