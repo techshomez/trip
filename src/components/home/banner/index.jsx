@@ -30,6 +30,23 @@ const Banner = () => {
             <div className="form_items">
               <div className="title">Destination or property name</div>
               <input type="text" placeholder="City, Airpot, Region, Landmark" />
+
+              <div className="destination_option">
+                <div className="title">
+                  <h2>Popular Destinations</h2>
+                </div>
+                <div className="destination_items">
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                  <span>Shanghai</span>
+                </div>
+              </div>
             </div>
             <div className="form_items">
               <div className="title">Destination or property name</div>
