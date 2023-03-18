@@ -4,6 +4,7 @@ import {
   FaLaptopHouse,
   FaPlane,
   FaRegSun,
+  FaSearch,
   FaSubway,
 } from "react-icons/fa";
 import "./banner.css";
@@ -24,7 +25,34 @@ const Banner = () => {
         </div>
       </div>
       <div className="search_wrapper">
-        <div className="search_box"></div>
+        <div className="search_box">
+          <div className="form_holder">
+            <div className="form_items">
+              <div className="title">Destination or property name</div>
+              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+            </div>
+            <div className="form_items">
+              <div className="title">Destination or property name</div>
+              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+            </div>
+            <div className="form_items">
+              <div className="title">Destination or property name</div>
+              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+            </div>
+            <div className="form_items">
+              <div className="title">Destination or property name</div>
+              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+            </div>
+            <div className="form_btn">
+              <button>
+                <i>
+                  <FaSearch />
+                </i>
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="search_cat">
           <div className="cat_holder">
             <div className="cat_items">
