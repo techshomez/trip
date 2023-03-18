@@ -130,12 +130,7 @@
   color: #8592a6;
 }
 
-.banner
-  .search_wrapper
-  .search_box
-  .form_holder
-  .form_items
-  .d_text {
+.banner .search_wrapper .search_box .form_holder .form_items .d_text, .headerSearchText {
   font-size: 14px;
   line-height: 22px;
   font-weight: 700;
@@ -175,6 +170,69 @@
   padding-top: +0.4rem;
 }
 
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 215px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionText {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #0f294d;
+  padding-top: 0.5rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.optionText small {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #6b8299;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3264ff;
+  color: #3264ff;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: white;
+  line-height: 32px;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
 /* Form Dropdown Options */
 .destination_option {
   width: 490px;
@@ -183,7 +241,7 @@
   top: 60px;
   left: 0;
   border-radius: 10px;
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .destination_option .title {
@@ -196,7 +254,6 @@
   background-color: #f7f7fb;
 }
 
-
 .destination_option .title h2 {
   font-size: 14px;
   line-height: 32px;
@@ -207,11 +264,11 @@
 }
 
 .destination_option .title_2 {
-    width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    background-color: #f7f7fb;
-  }
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background-color: #f7f7fb;
+}
 
 .destination_option .title_2 h2 {
   font-size: 14px;
@@ -244,13 +301,14 @@
 .destination_option .destination_items span:hover {
   color: #3264ff;
 }
-  
-  .date {
-    position: absolute;
-    top: 50px;
-    z-index: 2;
-  }
-  
+
+.date {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 2;
+}
+
 /* Search Cat */
 
 .banner .search_wrapper .search_cat {

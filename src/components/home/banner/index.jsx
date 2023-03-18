@@ -7,12 +7,15 @@ import { BsDoorOpenFill } from "react-icons/bs";
 import {
   FaCarAlt,
   FaLaptopHouse,
+  FaMinus,
   FaPlane,
+  FaPlus,
   FaRegSun,
   FaSearch,
   FaSubway,
 } from "react-icons/fa";
 import "./banner.css";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const [destination, setDestination] = useState(false);
@@ -43,6 +46,26 @@ const Banner = () => {
       name: "Las Vegas",
     },
   ];
+
+  const [openOptions, setOpenOptions] = useState(false);
+  const [options, setOptions] = useState({
+    adult: 1,
+    children: 0,
+    room: 1,
+  });
+
+  const handleOption = (name, operation) => {
+    setOptions((prev) => {
+      return {
+        ...prev,
+        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+      };
+    });
+  };
+
+  const handleSearch = () => {
+    navigate("/hotels", { state: { destination, date, options } });
+  };
 
   return (
     <div className="banner">
@@ -127,15 +150,101 @@ const Banner = () => {
               )}
             </div>
             <div className="form_items">
-              <div className="title">Destination or property name</div>
-              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+              <div className="title">Rooms & Guests</div>
+              <span
+                onClick={() => setOpenOptions(!openOptions)}
+                className="headerSearchText"
+              >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
+              {openOptions && (
+                <div className="options">
+                  <div className="optionItem">
+                    <span className="optionText">Room</span>
+                    <div className="optionCounter">
+                      <button
+                        disabled={options.room <= 1}
+                        className="optionCounterButton"
+                        onClick={() => handleOption("room", "d")}
+                      >
+                        <i>
+                          <FaMinus />
+                        </i>
+                      </button>
+                      <span className="optionCounterNumber">
+                        {options.room}
+                      </span>
+                      <button
+                        className="optionCounterButton"
+                        onClick={() => handleOption("room", "i")}
+                      >
+                        <i>
+                          <FaPlus />
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="optionItem">
+                    <span className="optionText">
+                      Adult <small>18+ yrs</small>
+                    </span>
+                    <div className="optionCounter">
+                      <button
+                        disabled={options.adult <= 1}
+                        className="optionCounterButton"
+                        onClick={() => handleOption("adult", "d")}
+                      >
+                        <i>
+                          <FaMinus />
+                        </i>
+                      </button>
+                      <span className="optionCounterNumber">
+                        {options.adult}
+                      </span>
+                      <button
+                        className="optionCounterButton"
+                        onClick={() => handleOption("adult", "i")}
+                      >
+                        <i>
+                          <FaPlus />
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="optionItem">
+                    <span className="optionText">
+                      Children <small>0-17 yrs</small>
+                    </span>
+                    <div className="optionCounter">
+                      <button
+                        disabled={options.children <= 0}
+                        className="optionCounterButton"
+                        onClick={() => handleOption("children", "d")}
+                      >
+                        <i>
+                          <FaMinus />
+                        </i>
+                      </button>
+                      <span className="optionCounterNumber">
+                        {options.children}
+                      </span>
+                      <button
+                        className="optionCounterButton"
+                        onClick={() => handleOption("children", "i")}
+                      >
+                        <i>
+                          <FaPlus />
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="form_items">
-              <div className="title">Destination or property name</div>
-              <input type="text" placeholder="City, Airpot, Region, Landmark" />
+              <div className="title">Keywords (optional)</div>
+              <input type="text" placeholder="Airpot, Station, Property" />
             </div>
             <div className="form_btn">
-              <button>
+              <button onClick={handleSearch}>
                 <i>
                   <FaSearch />
                 </i>
@@ -184,6 +293,15 @@ const Banner = () => {
                 <span>Bundle & Save</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="rating_wrapper">
+        <div className="rating_items">
+          <div className="form_group">
+            <input type="checkbox" name="" id="" />
+            <span>I'm traveling for work</span>
+            <i></i>
           </div>
         </div>
       </div>
