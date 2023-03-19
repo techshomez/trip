@@ -1,5 +1,6 @@
-import BannerSlider from "../../components/reuse/home/banner_slider_small";
+import BannerSlider from "../../components/home/banner_slider_small";
 import Page_Title from "../../components/reuse/page_title";
+import PropertyCard from "../../components/reuse/propertycard";
 import "./home.css";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <div className="home">
         <div className="container"></div>
         <BannerSlider />
+        <PropertyCard />
       </div>
     </>
   );

@@ -1,0 +1,62 @@
+.card_tab {
+  margin-top: 0.5rem;
+}
+
+.card_tab .tab_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card_tab .tab_items button {
+  width: 82px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: #0f294d;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.card_tab .tab_items button.active {
+  background-color: #0f294d;
+  width: 82px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.card_tab .tab_items button.active:hover {
+  color: #fff;
+}
+
+.card_tab .tab_items button:nth-child(1) {
+  width: 93px;
+}
+
+.card_tab .tab_items button:nth-child(2) {
+  width: 93px;
+}
+
+.card_tab .tab_items button:nth-child(3) {
+  width: 93px;
+}
+
+.card_tab .tab_items button:nth-child(5) {
+  width: 93px;
+}
+
+.card_tab .tab_items button:hover {
+  color: #3264ff;
+}
