@@ -1,7 +1,7 @@
 {
   "name": "trip",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,6 +16,9 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
