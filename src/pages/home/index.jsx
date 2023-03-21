@@ -1,3 +1,4 @@
+import AppDownload from "../../components/appDownload";
 import BannerSlider from "../../components/home/banner_slider_small";
 import Page_Title from "../../components/reuse/page_title";
 import PropertyCard from "../../components/reuse/propertycard";
@@ -288,7 +289,7 @@ const Home = () => {
               review_2: "/5",
               review_3: "Excellent",
               from: "From",
-              price: "US$80.02",
+              price: "US$87",
               image: "/assets/card/card_image/16.png",
             },
             {
@@ -298,16 +299,17 @@ const Home = () => {
               review_2: "/5",
               review_3: "562 Reviews",
               from: "From",
-              price: "US$79.04",
-              image: "/assets/card/card_image/17.png",
+              price: "US$87",
+              image: "/assets/card/card_image/4.jpg",
             },
           ]}
-          image_ads="/assets/card/card_image/19.png"
-          content_1="Big Brands"
-          content_2="Big Discounts!"
+          image_ads="/assets/card/card_image/5.png"
+          content_1="Discover great deals on"
+          content_2="hotels around the world"
           btn="Go Now"
         />
       </div>
+      <AppDownload />
     </>
   );
 };

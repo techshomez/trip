@@ -19,6 +19,7 @@
   border-radius: 10px;
   overflow: hidden;
   bottom: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .cardlist .card_wrapper .list_items img {
@@ -30,6 +31,8 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   transition: transform 0.2s;
+    cursor: pointer;
+
 }
 
 .cardlist .card_wrapper .list_items:hover img {
