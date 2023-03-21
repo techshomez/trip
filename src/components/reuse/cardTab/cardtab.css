@@ -6,11 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .card_tab .tab_items button {
-  width: 82px;
+  width: 100px;
   height: 40px;
   font-size: 14px;
   line-height: 18px;

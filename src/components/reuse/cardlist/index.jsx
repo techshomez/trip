@@ -1,6 +1,13 @@
 import { FaStar } from "react-icons/fa";
 import "./cardlist.css";
-const CardList = ({ property_items, image_ads, content_1, content_2, btn }) => {
+const CardList = ({
+  property_items,
+  image_ads,
+  content_1,
+  content_2,
+  btn,
+  bg,
+}) => {
   return (
     <div className="cardlist">
       <div className="card_wrapper">

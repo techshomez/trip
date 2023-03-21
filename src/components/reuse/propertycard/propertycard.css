@@ -1,7 +1,7 @@
 .card {
   padding: 1rem 5%;
   display: flex;
-  background-color: #fdf3f2;
+  flex-direction: column;
   margin-top: 2rem;
   margin-left: 0rem;
   border-radius: 10px;
@@ -11,7 +11,7 @@
   width: 100%;
   display: flex;
   margin-left: -2rem;
-  gap: 1rem;
+  gap: 12rem;
   justify-content: space-between;
 }
 
@@ -46,7 +46,7 @@
   gap: 5px;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #0f294d;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;

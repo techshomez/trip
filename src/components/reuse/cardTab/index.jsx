@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./cardtab.css";
 
-const CardTab = ({ activeTab, setActiveTab, tab_btns, klass }) => {
+const CardTab = ({ activeTab, setActiveTab, tab_btns }) => {
   return (
     <div className="card_tab">
       <div className="tab_items">
