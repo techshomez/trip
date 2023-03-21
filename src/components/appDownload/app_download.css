@@ -11,7 +11,7 @@
 }
 
 .app_download .container {
-  padding: 4rem 7%;
+  padding: 4rem 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,27 +19,66 @@
 }
 
 .app_download .container .app_left {
-  width: 30%;
+  width: 32%;
   height: 605px;
-  background-color: #fff;
   position: relative;
   box-sizing: content-box;
 }
 
-.app_download .container .app_left img{
-  width: 100%;
+.app_download .container .app_left .img_hold {
+  width: 265px;
+  height: 605px;
+  background-color: #fff;
+  border-radius: 60px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.app_download .container .app_left img {
+  width: 80%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 45px;
   position: absolute;
 }
 
-.app_download .container .app_left {
-  width: 30%;
-  background-color: pink;
-  position: relative;
+.app_download .container .app_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  height: 605px;
+  box-sizing: content-box;
+  background-color: transparent;
 }
 
-.app_download .container .app_right {
-  width: 70%;
-  background-color: red;
+.app_download .container .app_right h2 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+    padding-bottom: 1.5rem;
+}
+
+.app_download .container .app_right p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.app_download .container .app_right .top_bottom{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.app_download .container .app_right .top_bottom .bottom_img{
+  display: flex;
+  gap: 1rem;
 }
