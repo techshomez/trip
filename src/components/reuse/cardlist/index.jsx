@@ -1,89 +1,45 @@
 import { FaStar } from "react-icons/fa";
 import "./cardlist.css";
-const CardList = () => {
+const CardList = ({ property_items, image_ads, content_1, content_2, btn }) => {
   return (
     <div className="cardlist">
       <div className="card_wrapper">
-        <div className="list_items">
-          <img src="/assets/card/card_image/2.jpg" alt="" />
-          <div className="list_box">
-            <h2>
-              Swissotel Bangkok Ratchada (SHA Extra Plus){" "}
-              <i>
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </i>
-            </h2>
-            <div className="rating">
-              <span>
-                4.5 <small>/5</small>
-              </span>
-              <span>562 Reviews </span>
+        {property_items.map((p_items) => {
+          return (
+            <div className="list_items">
+              <img src={p_items.image} alt="" />
+              <div className="list_box">
+                <h2>
+                  {p_items.title}
+                  <i>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                  </i>
+                </h2>
+                <div className="rating">
+                  <span>
+                    {p_items.review_1} <small>{p_items.review_2}</small>
+                  </span>
+                  <span>{p_items.review_3} </span>
+                </div>
+                <div className="price">
+                  <small>{p_items.from}</small> <span>{p_items.price}</span>
+                </div>
+              </div>
             </div>
-            <div className="price">
-              <small>From</small> <span>US$87</span>
-            </div>
-          </div>
-        </div>
-        <div className="list_items">
-          <img src="/assets/card/card_image/1.jpg" alt="" />
-          <div className="list_box">
-            <h2>
-              Bangkok Marriott Marquis Queen's Park
-              <i>
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </i>
-            </h2>
-            <div className="rating">
-              <span>
-                4.5 <small>/5</small>
-              </span>
-              <span>562 Reviews </span>
-            </div>
-            <div className="price">
-              <small>From</small> <span>US$87</span>
-            </div>
-          </div>
-        </div>
-        <div className="list_items">
-          <img src="/assets/card/card_image/4.jpg" alt="" />
-          <div className="list_box">
-            <h2>
-              Rosewood Bangkok
-              <i>
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </i>
-            </h2>
-            <div className="rating">
-              <span>
-                4.5 <small>/5</small>
-              </span>
-              <span>562 Reviews </span>
-            </div>
-            <div className="price">
-              <small>From</small> <span>US$87</span>
-            </div>
-          </div>
-        </div>
+          );
+        })}
         <div className="lists_item">
-          <img src="/assets/card/card_image/5.png" alt="" />
+          <img src={image_ads} alt="" />
           <div className="img_content">
             <h2>
-              Discover great deals on <br />
-              hotels around the world
+              {content_1} <br />
+              {content_2}
             </h2>
-            <button>Go Now</button>
+            <button>{btn}</button>
           </div>
         </div>
       </div>

@@ -10,7 +10,26 @@ const Home = () => {
       <div className="home">
         <div className="container"></div>
         <BannerSlider />
-        <PropertyCard />
+        <PropertyCard
+          title="Featured Properties"
+          title_sub={[
+            {
+              id: 1,
+              image: "/assets/card/1.png",
+              text: "We Price Match",
+            },
+            {
+              id: 2,
+              image: "/assets/card/2.png",
+              text: "Hotel Booking Guarantee",
+            },
+            {
+              id: 3,
+              image: "/assets/card/3.png",
+              text: "Hotel Stay Guarantee",
+            },
+          ]}
+        />
       </div>
     </>
   );
