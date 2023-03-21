@@ -300,10 +300,10 @@ const Home = () => {
               review_3: "562 Reviews",
               from: "From",
               price: "US$87",
-              image: "/assets/card/card_image/4.jpg",
+              image: "/assets/card/card_image/17.png",
             },
           ]}
-          image_ads="/assets/card/card_image/5.png"
+          image_ads="/assets/card/card_image/19.png"
           content_1="Discover great deals on"
           content_2="hotels around the world"
           btn="Go Now"
