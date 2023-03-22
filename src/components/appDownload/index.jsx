@@ -1,7 +1,24 @@
 import "./app_download.css";
 import { FaChevronDown } from "react-icons/fa";
+import { useState } from "react";
+import { ReactCountryDropdown } from "react-country-dropdown";
+import "react-country-dropdown/dist/index.css";
 
 const AppDownload = () => {
+  const [formopen, setFormopen] = useState(false);
+
+  const handleSelect = (country) => {
+    console.log(country);
+    /* returns the details on selected country as an object
+    	{
+          name: "United States of America", 
+          code: "US", 
+          capital: "Washington, D.C.", 
+          region: "Americas", 
+          latlng: [38, -97]
+        }
+    */
+  };
   return (
     <div className="app_download">
       <div className="container">
@@ -30,11 +47,19 @@ const AppDownload = () => {
                 download the app.
               </article>
               <div className="form_group">
-                <span>
+                <span onClick={() => setFormopen(!formopen)}>
                   (+242)
                   <i>
                     <FaChevronDown />
                   </i>
+                  {formopen && (
+                    <div className="form_option">
+                      <ReactCountryDropdown
+                        onSelect={handleSelect}
+                        countryCode="IN"
+                      />
+                    </div>
+                  )}
                 </span>
                 <input placeholder="Mobile Number" />
               </div>
@@ -52,7 +77,7 @@ const AppDownload = () => {
               </div>
               <div className="qrcode">
                 <img src="/assets/qrcode.png" alt="" />
-                  <img src="/assets/logo.png" alt="" />
+                <img src="/assets/logo.png" alt="" />
               </div>
             </div>
           </div>
