@@ -1,4 +1,5 @@
 import "./app_download.css";
+import { FaChevronDown } from "react-icons/fa";
 
 const AppDownload = () => {
   return (
@@ -28,9 +29,22 @@ const AppDownload = () => {
                 Enter your phone number to receive a text with a link to
                 download the app.
               </article>
-              <div className="form_group"></div>
+              <div className="form_group">
+                <span>
+                  (+242)
+                  <i>
+                    <FaChevronDown />
+                  </i>
+                </span>
+                <input placeholder="Mobile Number" />
+              </div>
+              <button>Send App Link</button>
             </div>
-            <div className="divider">|</div>
+            <div className="divider">
+              <span></span>
+              <small>or</small>
+              <span></span>
+            </div>
             <div className="bottom_img">
               <div className="app_down">
                 <img src="assets/android.png" alt="" />
@@ -38,6 +52,7 @@ const AppDownload = () => {
               </div>
               <div className="qrcode">
                 <img src="/assets/qrcode.png" alt="" />
+                  <img src="/assets/logo.png" alt="" />
               </div>
             </div>
           </div>
