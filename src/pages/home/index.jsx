@@ -1,5 +1,6 @@
 import AppDownload from "../../components/appDownload";
 import BannerSlider from "../../components/home/banner_slider_small";
+import FooterTop from "../../components/home/footerTop";
 import Page_Title from "../../components/reuse/page_title";
 import PropertyCard from "../../components/reuse/propertycard";
 import "./home.css";
@@ -310,6 +311,7 @@ const Home = () => {
         />
       </div>
       <AppDownload />
+      <FooterTop />
     </>
   );
 };
