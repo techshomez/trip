@@ -1,0 +1,30 @@
+hr {
+  background-color: #e4e3e3;
+  height: 0;
+  border: 0.5px solid rgb(228, 227, 227);
+}
+
+.footer {
+  padding: 2rem 4%;
+}
+
+.footer .container {
+  padding: 2rem 5%;
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer .container .footer-items {
+  width: 500px;
+  height: auto;
+}
+
+.footer .container .footer-items h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f294d;
+  padding-bottom: 1rem;
+  font-family: arial, sans-serif;
+}
