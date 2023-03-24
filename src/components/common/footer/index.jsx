@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="social-link">
               <i>
-                <FaFacebook />
+                <FaFacebookF />
               </i>
               <i>
                 <FaInstagram />
@@ -60,15 +60,21 @@ const Footer = () => {
               <Link to="">Become a Supplier</Link>
             </div>
           </div>
-          <div className="footer-items">
-            <h2>Payment Methods</h2>
-            <div className="footer-link">
-              <Link to="">Investor Relations</Link>
-              <Link to="">Trip.com Rewards</Link>
-              <Link to="">Affiliate Program</Link>
-              <Link to="">List My Hotel</Link>
-              <Link to="">All Hotels</Link>
-              <Link to="">Become a Supplier</Link>
+          <div className="footer-items last">
+            <h2 className="last">Payment Methods</h2>
+            <div className="footer-img">
+              <img src="/assets/visa.png" alt="" />
+              <img src="/assets/master-card.png" alt="" />
+              <img src="/assets/paypal.png" alt="" />
+              <img src="/assets/apple-pay.png" alt="" />
+              <img src="/assets/google-pay.png" alt="" />
+            </div>
+            <div className="partners">
+              <h2>Our Partners</h2>
+              <div className="partner_list">
+                <img src="assets/google.png" alt="" />
+                <img src="assets/tripadvisor.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
