@@ -7,7 +7,6 @@
   justify-content: start;
   align-items: start;
   gap: 20px;
-
 }
 
 .cardlist .card_wrapper .list_items {
@@ -30,8 +29,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   transition: transform 0.2s;
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 .cardlist .card_wrapper .list_items:hover img {
@@ -134,44 +132,55 @@
 }
 
 .cardlist .card_wrapper .list_items .list_box .rating {
+  display: flex;
+  gap: 0.5rem;
   position: absolute;
   bottom: 0;
+  width: auto;
   height: 10px;
   margin-bottom: 3rem;
   padding: 10px;
 }
 
-.cardlist .card_wrapper .list_items .list_box .rating span:nth-child(1) {
-  width: auto;
-  height: 12px;
+.cardlist .card_wrapper .list_items .list_box .rating .rating_f_child {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 38px;
+  height: 18px;
   padding: 0.2rem;
+  background-color: #00429b;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 10px;
+}
+
+.cardlist .card_wrapper .list_items .list_box .rating .rating_f_child h5 {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
   font-weight: 400;
   color: #fff;
-  background-color: #00429b;
-  border-top-left-radius: 25%;
-  border-bottom-left-radius: 25%;
-  border-bottom-right-radius: 10px;
+  padding-left: 1px;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;
 }
 
-.cardlist .card_wrapper .list_items .list_box .rating span:nth-child(1) small {
+.cardlist .card_wrapper .list_items .list_box .rating .rating_f_child h6 {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 14px;
   font-weight: 400;
   color: #3264ff;
+  padding-top: 4px;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;
 }
 
-.cardlist .card_wrapper .list_items .list_box .rating span:nth-child(2) {
+.cardlist .card_wrapper .list_items .list_box .rating span {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 18px;
   font-weight: 700;
   color: #00429b;
-  padding-left: 10px;
+  padding-top: 4px;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;
 }
@@ -194,6 +203,7 @@
   font-weight: 400;
   color: #8592a6;
   padding-top: 0.1rem;
+  margin-right: -2.2rem;
   font-family: BlinkMacSystemFont, -apple-system, Roboto, Helvetica, Arial,
     sans-serif;
 }

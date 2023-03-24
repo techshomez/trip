@@ -91,9 +91,9 @@ const AppDownload = () => {
               <button>Send App Link</button>
             </div>
             <div className="divider">
-              <span></span>
+              <div className="divi_child"></div>
               <small>or</small>
-              <span></span>
+              <div className="divi_child"></div>
             </div>
             <div className="bottom_img">
               <div className="app_down">

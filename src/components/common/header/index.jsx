@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaSistrix } from "react-icons/fa";
+import { FaMapMarker, FaSistrix } from "react-icons/fa";
 import "./header.css";
 import Banner from "../../home/banner";
+import { useState } from "react";
 
 const Header = () => {
+  const [searchOpen, setSearchOpen] = useState(false);
   return (
     <div className="header">
       <div className="container">
@@ -14,6 +16,7 @@ const Header = () => {
           <div className="nav_search">
             <input
               type="text"
+              onClick={() => setSearchOpen(!searchOpen)}
               placeholder="Destination, attraction, hotel, etc"
             />
             <button>
@@ -21,6 +24,55 @@ const Header = () => {
                 <FaSistrix />
               </i>
             </button>
+            {searchOpen && (
+              <div className="header_search_option">
+                <div className="search_title">Popular Destinations</div>
+                <div className="search_items">
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>Bangkok</span>
+                    <p>Thailand</p>
+                  </div>
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>Hong Konk</span>
+                    <p>China</p>
+                  </div>
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>Singapore</span>
+                    <p>Singapore</p>
+                  </div>
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>New York</span>
+                    <p>New York State, United State</p>
+                  </div>
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>Tokyo</span>
+                    <p>Japan</p>
+                  </div>
+                  <div className="items">
+                    <i>
+                      <FaMapMarker />
+                    </i>
+                    <span>Las Vegas</span>
+                    <p>Clark Country, Nevada, United State</p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <nav className="navbar_top">

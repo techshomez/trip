@@ -27,9 +27,10 @@ const CardList = ({
                   </i>
                 </h2>
                 <div className="rating">
-                  <span>
-                    {p_items.review_1} <small>{p_items.review_2}</small>
-                  </span>
+                  <div className="rating_f_child">
+                    <h5>{p_items.review_1}</h5>
+                    <h6>{p_items.review_2}</h6>
+                  </div>
                   <span>{p_items.review_3} </span>
                 </div>
                 <div className="price">
