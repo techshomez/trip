@@ -78,7 +78,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="third-section">
-          <h2>Featured Hotel Destinations</h2>
+          <h2>Popular Flights</h2>
           <div className="section-items">
             <a href="#">Best Hotels in Shanghai</a>
             <span>{"|"}</span>
@@ -122,7 +122,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="third-section">
-          <h2>Featured Hotel Destinations</h2>
+          <h2>Trending Searches</h2>
           <div className="section-items">
             <a href="#">Best Hotels in Shanghai</a>
             <span>{"|"}</span>
@@ -166,7 +166,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="third-section">
-          <h2>Featured Hotel Destinations</h2>
+          <h2>Trip.com Links</h2>
           <div className="section-items">
             <a href="#">Best Hotels in Shanghai</a>
             <span>{"|"}</span>
@@ -210,7 +210,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="third-section">
-          <h2>Featured Hotel Destinations</h2>
+          <h2>Popular Airlines and Airports</h2>
           <div className="section-items">
             <a href="#">Best Hotels in Shanghai</a>
             <span>{"|"}</span>
@@ -254,7 +254,7 @@ const FooterTop = () => {
           </div>
         </div>
         <div className="third-section">
-          <h2>Featured Hotel Destinations</h2>
+          <h2>Flights to Popular Cities</h2>
           <div className="section-items">
             <a href="#">Best Hotels in Shanghai</a>
             <span>{"|"}</span>
