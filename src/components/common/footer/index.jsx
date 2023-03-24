@@ -79,6 +79,26 @@ const Footer = () => {
           </div>
         </div>
         <hr />
+        <div className="footer-middle">
+          <div className="container">
+            <div className="middle-items">
+              <img src="assets/cc-2022.png" alt="" />
+              <span>Contact Center of the year 2022</span>
+            </div>
+            <div className="middle-items">
+              <img src="assets/googledesign.jpeg" alt="" />
+              <span>Google Material Design Awards 2019</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="footer-bottom">
+          <article>
+            Copyright © 2023 Trip.com Travel Singapore Pte. Ltd. All rights
+            reserved
+            <br /> Site Operator: Trip.com Travel Singapore Pte. Ltd.
+          </article>
+        </div>
       </div>
     </>
   );

@@ -1,11 +1,12 @@
 hr {
-  background-color: #e4e3e3;
-  height: 0;
+  background-color: rgb(228, 227, 227);
+  height: 0px;
   border: 0.5px solid rgb(228, 227, 227);
 }
 
 .footer {
   padding: 2rem 4%;
+  margin-bottom: 0rem;
 }
 
 .footer .container {
@@ -120,4 +121,57 @@ hr {
   width: 58px;
   height: 16px;
   margin: 0px 8px 8px 0px;
+}
+
+/* Footer middle */
+
+.footer .container {
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.footer .container .middle-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.footer .container .middle-items img:nth-child(1){
+  width: 40px;
+  height: 40px;
+}
+
+.footer .container .middle-items img:nth-child(2){
+  width: 92px;
+  height: 40px;
+}
+
+.footer .container .middle-items span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0f294d;
+  font-family: arial, sans-serif;
+}
+
+.footer .footer-bottom {
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.footer .footer-bottom article {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0f294d;
+  line-height: 19px;
+  text-align: center;
+  font-family: arial, sans-serif;
 }
