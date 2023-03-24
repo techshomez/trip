@@ -15,6 +15,7 @@ hr {
   gap: 4rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .footer .container .footer-items {
@@ -28,21 +29,17 @@ hr {
   color: #0f294d;
   padding-bottom: 1rem;
   font-family: arial, sans-serif;
+  position: absolute;
+  top: 0;
+  padding-top: 2rem;
 }
 
-.footer .container .footer-items .last {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
-  color: #8592a6;
-  padding-bottom: 1rem;
-  font-family: arial, sans-serif;
-}
 
 .footer .container .footer-items .footer-link {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-top: 2rem;
 }
 
 .footer .container .footer-items .footer-link a {
@@ -99,6 +96,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+  position: relative;
 }
 
 .footer .container .footer-items .partners h2 {
@@ -106,14 +104,14 @@ hr {
   line-height: 14px;
   font-weight: 400;
   color: #8592a6;
-  padding-top: 1.5rem;
+  padding-top: 0.8rem;
   font-family: arial, sans-serif;
 }
 
 .footer .container .footer-items .partners .partner_list {
   display: flex;
   gap: 1rem;
-  margin-top: -0.5rem;
+  margin-top: 2rem;
 }
 
 .footer .container .footer-items .partners .partner_list img {

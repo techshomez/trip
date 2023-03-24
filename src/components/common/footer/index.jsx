@@ -60,8 +60,8 @@ const Footer = () => {
               <Link to="">Become a Supplier</Link>
             </div>
           </div>
-          <div className="footer-items last">
-            <h2 className="last">Payment Methods</h2>
+          <div className="footer-items">
+            <h2 className="">Payment Methods</h2>
             <div className="footer-img">
               <img src="/assets/visa.png" alt="" />
               <img src="/assets/master-card.png" alt="" />
